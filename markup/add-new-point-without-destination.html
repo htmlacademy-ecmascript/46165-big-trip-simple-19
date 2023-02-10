@@ -17,13 +17,25 @@
         <div class="trip-main">
           <section class="trip-main__trip-info  trip-info">
             <div class="trip-info__main">
-              <h1 class="trip-info__title">My BigTrip</h1>
+              <h1 class="trip-info__title">Amsterdam &mdash; Chamonix &mdash; Geneva</h1>
 
-              <p class="trip-info__dates">Sometimes…</p>
+              <p class="trip-info__dates">Mar 18&nbsp;&mdash;&nbsp;20</p>
             </div>
+
+            <p class="trip-info__cost">
+              Total: &euro;&nbsp;<span class="trip-info__cost-value">1230</span>
+            </p>
           </section>
 
           <div class="trip-main__trip-controls  trip-controls">
+            <div class="trip-controls__navigation">
+              <h2 class="visually-hidden">Switch trip view</h2>
+              <nav class="trip-controls__trip-tabs  trip-tabs">
+                <a class="trip-tabs__btn  trip-tabs__btn--active" href="#">Table</a>
+                <a class="trip-tabs__btn" href="#">Stats</a>
+              </nav>
+            </div>
+
             <div class="trip-controls__filters">
               <h2 class="visually-hidden">Filter events</h2>
               <form class="trip-filters" action="#" method="get">
@@ -35,6 +47,11 @@
                 <div class="trip-filters__filter">
                   <input id="filter-future" class="trip-filters__filter-input  visually-hidden" type="radio" name="trip-filter" value="future">
                   <label class="trip-filters__filter-label" for="filter-future">Future</label>
+                </div>
+
+                <div class="trip-filters__filter">
+                  <input id="filter-past" class="trip-filters__filter-input  visually-hidden" type="radio" name="trip-filter" value="past">
+                  <label class="trip-filters__filter-label" for="filter-past">Past</label>
                 </div>
 
                 <button class="visually-hidden" type="submit">Accept filter</button>
@@ -64,7 +81,7 @@
             </div>
 
             <div class="trip-sort__item  trip-sort__item--time">
-              <input id="sort-time" class="trip-sort__input  visually-hidden" type="radio" name="trip-sort" value="sort-time" disabled>
+              <input id="sort-time" class="trip-sort__input  visually-hidden" type="radio" name="trip-sort" value="sort-time">
               <label class="trip-sort__btn" for="sort-time">Time</label>
             </div>
 
@@ -241,6 +258,7 @@
                     &mdash;
                     <time class="event__end-time" datetime="2019-03-18T11:00">11:00</time>
                   </p>
+                  <p class="event__duration">30M</p>
                 </div>
                 <p class="event__price">
                   &euro;&nbsp;<span class="event__price-value">20</span>
@@ -253,6 +271,12 @@
                     <span class="event__offer-price">20</span>
                   </li>
                 </ul>
+                <button class="event__favorite-btn event__favorite-btn--active" type="button">
+                  <span class="visually-hidden">Add to favorite</span>
+                  <svg class="event__favorite-icon" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14 21l-8.22899 4.3262 1.57159-9.1631L.685209 9.67376 9.8855 8.33688 14 0l4.1145 8.33688 9.2003 1.33688-6.6574 6.48934 1.5716 9.1631L14 21z"/>
+                  </svg>
+                </button>
                 <button class="event__rollup-btn" type="button">
                   <span class="visually-hidden">Open event</span>
                 </button>
@@ -272,6 +296,7 @@
                     &mdash;
                     <time class="event__end-time" datetime="2019-03-18T13:35">13:35</time>
                   </p>
+                  <p class="event__duration">01H 10M</p>
                 </div>
                 <p class="event__price">
                   &euro;&nbsp;<span class="event__price-value">160</span>
@@ -289,6 +314,12 @@
                     <span class="event__offer-price">80</span>
                   </li>
                 </ul>
+                <button class="event__favorite-btn" type="button">
+                  <span class="visually-hidden">Add to favorite</span>
+                  <svg class="event__favorite-icon" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14 21l-8.22899 4.3262 1.57159-9.1631L.685209 9.67376 9.8855 8.33688 14 0l4.1145 8.33688 9.2003 1.33688-6.6574 6.48934 1.5716 9.1631L14 21z"/>
+                  </svg>
+                </button>
                 <button class="event__rollup-btn" type="button">
                   <span class="visually-hidden">Open event</span>
                 </button>
@@ -308,6 +339,7 @@
                     &mdash;
                     <time class="event__end-time" datetime="2019-03-18T16:05">16:05</time>
                   </p>
+                  <p class="event__duration">01H 35M</p>
                 </div>
                 <p class="event__price">
                   &euro;&nbsp;<span class="event__price-value">160</span>
@@ -320,6 +352,12 @@
                     <span class="event__offer-price">200</span>
                   </li>
                 </ul>
+                <button class="event__favorite-btn  event__favorite-btn--active" type="button">
+                  <span class="visually-hidden">Add to favorite</span>
+                  <svg class="event__favorite-icon" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14 21l-8.22899 4.3262 1.57159-9.1631L.685209 9.67376 9.8855 8.33688 14 0l4.1145 8.33688 9.2003 1.33688-6.6574 6.48934 1.5716 9.1631L14 21z"/>
+                  </svg>
+                </button>
                 <button class="event__rollup-btn" type="button">
                   <span class="visually-hidden">Open event</span>
                 </button>
@@ -339,6 +377,7 @@
                     &mdash;
                     <time class="event__end-time" datetime="2019-03-18T13:35">17:00</time>
                   </p>
+                  <p class="event__duration">40M</p>
                 </div>
                 <p class="event__price">
                   &euro;&nbsp;<span class="event__price-value">600</span>
@@ -351,6 +390,12 @@
                     <span class="event__offer-price">50</span>
                   </li>
                 </ul>
+                <button class="event__favorite-btn event__favorite-btn--active" type="button">
+                  <span class="visually-hidden">Add to favorite</span>
+                  <svg class="event__favorite-icon" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14 21l-8.22899 4.3262 1.57159-9.1631L.685209 9.67376 9.8855 8.33688 14 0l4.1145 8.33688 9.2003 1.33688-6.6574 6.48934 1.5716 9.1631L14 21z"/>
+                  </svg>
+                </button>
                 <button class="event__rollup-btn" type="button">
                   <span class="visually-hidden">Open event</span>
                 </button>
@@ -370,6 +415,7 @@
                     &mdash;
                     <time class="event__end-time" datetime="2019-03-19T13:00">13:00</time>
                   </p>
+                  <p class="event__duration">01H 20M</p>
                 </div>
                 <p class="event__price">
                   &euro;&nbsp;<span class="event__price-value">50</span>
@@ -387,6 +433,12 @@
                     <span class="event__offer-price">30</span>
                   </li>
                 </ul>
+                <button class="event__favorite-btn" type="button">
+                  <span class="visually-hidden">Add to favorite</span>
+                  <svg class="event__favorite-icon" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14 21l-8.22899 4.3262 1.57159-9.1631L.685209 9.67376 9.8855 8.33688 14 0l4.1145 8.33688 9.2003 1.33688-6.6574 6.48934 1.5716 9.1631L14 21z"/>
+                  </svg>
+                </button>
                 <button class="event__rollup-btn" type="button">
                   <span class="visually-hidden">Open event</span>
                 </button>
@@ -406,16 +458,17 @@
                     &mdash;
                     <time class="event__end-time" datetime="2019-03-19T11:00">17:00</time>
                   </p>
+                  <p class="event__duration">01H</p>
                 </div>
                 <p class="event__price">
                   &euro;&nbsp;<span class="event__price-value">20</span>
                 </p>
-                <h4 class="visually-hidden">Offers:</h4>
-                <ul class="event__selected-offers">
-                  <li class="event__offer">
-                    <span class="event__offer-title">No additional offers</span>
-                  </li>
-                </ul>
+                <button class="event__favorite-btn" type="button">
+                  <span class="visually-hidden">Add to favorite</span>
+                  <svg class="event__favorite-icon" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14 21l-8.22899 4.3262 1.57159-9.1631L.685209 9.67376 9.8855 8.33688 14 0l4.1145 8.33688 9.2003 1.33688-6.6574 6.48934 1.5716 9.1631L14 21z"/>
+                  </svg>
+                </button>
                 <button class="event__rollup-btn" type="button">
                   <span class="visually-hidden">Open event</span>
                 </button>
@@ -435,6 +488,7 @@
                     &mdash;
                     <time class="event__end-time" datetime="2019-03-19T19:00">19:00</time>
                   </p>
+                  <p class="event__duration">01H</p>
                 </div>
                 <p class="event__price">
                   &euro;&nbsp;<span class="event__price-value">20</span>
@@ -452,6 +506,12 @@
                     <span class="event__offer-price">100</span>
                   </li>
                 </ul>
+                <button class="event__favorite-btn" type="button">
+                  <span class="visually-hidden">Add to favorite</span>
+                  <svg class="event__favorite-icon" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14 21l-8.22899 4.3262 1.57159-9.1631L.685209 9.67376 9.8855 8.33688 14 0l4.1145 8.33688 9.2003 1.33688-6.6574 6.48934 1.5716 9.1631L14 21z"/>
+                  </svg>
+                </button>
                 <button class="event__rollup-btn" type="button">
                   <span class="visually-hidden">Open event</span>
                 </button>
@@ -471,16 +531,17 @@
                     &mdash;
                     <time class="event__end-time" datetime="2019-03-20T09:25">09:25</time>
                   </p>
+                  <p class="event__duration">01H</p>
                 </div>
                 <p class="event__price">
                   &euro;&nbsp;<span class="event__price-value">20</span>
                 </p>
-                <h4 class="visually-hidden">Offers:</h4>
-                <ul class="event__selected-offers">
-                  <li class="event__offer">
-                    <span class="event__offer-title">No additional offers</span>
-                  </li>
-                </ul>
+                <button class="event__favorite-btn" type="button">
+                  <span class="visually-hidden">Add to favorite</span>
+                  <svg class="event__favorite-icon" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14 21l-8.22899 4.3262 1.57159-9.1631L.685209 9.67376 9.8855 8.33688 14 0l4.1145 8.33688 9.2003 1.33688-6.6574 6.48934 1.5716 9.1631L14 21z"/>
+                  </svg>
+                </button>
                 <button class="event__rollup-btn" type="button">
                   <span class="visually-hidden">Open event</span>
                 </button>
@@ -500,16 +561,17 @@
                     &mdash;
                     <time class="event__end-time" datetime="2019-03-20T12:15">12:15</time>
                   </p>
+                  <p class="event__duration">01H</p>
                 </div>
                 <p class="event__price">
                   &euro;&nbsp;<span class="event__price-value">180</span>
                 </p>
-                <h4 class="visually-hidden">Offers:</h4>
-                <ul class="event__selected-offers">
-                  <li class="event__offer">
-                    <span class="event__offer-title">No additional offers</span>
-                  </li>
-                </ul>
+                <button class="event__favorite-btn" type="button">
+                  <span class="visually-hidden">Add to favorite</span>
+                  <svg class="event__favorite-icon" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14 21l-8.22899 4.3262 1.57159-9.1631L.685209 9.67376 9.8855 8.33688 14 0l4.1145 8.33688 9.2003 1.33688-6.6574 6.48934 1.5716 9.1631L14 21z"/>
+                  </svg>
+                </button>
                 <button class="event__rollup-btn" type="button">
                   <span class="visually-hidden">Open event</span>
                 </button>
